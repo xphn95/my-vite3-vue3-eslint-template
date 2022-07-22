@@ -10,12 +10,16 @@ export default defineConfig({
     }),
     AutoImport({
       imports: [
-        vue
+        'vue'
+        // 'vue/macros',
+        // 'vue-router',
+        // '@vueuse/core'
       ],
       dts: true,
-      eslintrc: {
-        enabled: true
-      }
+      /* dirs: [
+        './src/composables'
+      ], */
+      vueTemplate: true
     })
   ]
 })
