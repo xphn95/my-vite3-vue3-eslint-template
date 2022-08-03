@@ -6,6 +6,7 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-strongly-recommended',
     'plugin:json/recommended',
+    'plugin:markdown/recommended',
     'standard',
     './.eslintrc-auto-import.json'
   ],
@@ -18,5 +19,9 @@ module.exports = {
   ],
   rules: {
     'no-undef': 'off'
-  }
+  },
+  ignorePatterns: [
+    '**/*.d.ts',
+    '**/*.html'
+  ]
 }
